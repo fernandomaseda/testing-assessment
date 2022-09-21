@@ -8,7 +8,7 @@ export enum ResultState {
 
 export type PresentationalProps = {
   isLoading: boolean;
-  pokemon: Pick<Pokemon, 'id'>;
+  pokemon: Pick<Pokemon, 'id'> | null;
   state: ResultState;
   onCheck: (name: string) => void;
   onRetry: () => void;

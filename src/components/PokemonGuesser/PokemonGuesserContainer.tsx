@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import React = require('react');
+import React, { useState } from 'react';
 import { useGetRandomPokemon } from '../PokemonGuesser/hooks/useGetRandomPokemon';
 import { PokemonGuesserPresentational } from './PokemonGuesserPresentational';
 import { ResultState } from '../PokemonGuesser/types';
@@ -17,7 +16,7 @@ export const PokemonGuesserContainer = () => {
   const getAllPokemons = useAllPokemons(dispatch);
 
   const onCheck = (name: string) => {
-    if (name.toLowerCase() === randomPokemon.name.toLowerCase()) {
+    if (name.toLowerCase() === randomPokemon?.name.toLowerCase()) {
       setStateGuess(ResultState.SUCCESS);
     } else {
       setStateGuess(ResultState.ERROR);

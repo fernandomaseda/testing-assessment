@@ -1,5 +1,5 @@
-import React = require('react');
-import { createContext, useEffect, useReducer } from 'react';
+import React from 'react';
+import { createContext, useReducer } from 'react';
 import { getAllPokemons } from '../services/PokemonService';
 import reducer from './reducer';
 

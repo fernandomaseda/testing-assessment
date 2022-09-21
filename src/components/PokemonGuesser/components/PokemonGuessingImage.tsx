@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 import {
   PokemonGuessingImageProps,
   ResultState,
@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const PokemonImage = styled.img`
   /* Adapt the colors based on primary prop */
-  background: ${(props) => (props.isGuessing ? 'black' : 'white')};
+  background: ${(props: {isGuessing : boolean}) => (props.isGuessing ? 'black' : 'white')};
 `;
 
 export const PokemonGuessingImage = (props: PokemonGuessingImageProps) => {

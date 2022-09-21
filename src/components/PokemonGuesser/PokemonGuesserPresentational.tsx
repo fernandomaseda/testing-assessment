@@ -1,4 +1,4 @@
-import React = require('react');
+import React from 'react';
 import { PresentationalProps, ResultState } from '../PokemonGuesser/types';
 import { InfinitySpin } from 'react-loader-spinner';
 import { PokemonGuessingImage } from '../PokemonGuesser/components/PokemonGuessingImage';
@@ -8,7 +8,7 @@ export const PokemonGuesserPresentational = (props: PresentationalProps) => {
 
   const onSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
-    props.onCheck(inputRef.current.value);
+    props.onCheck(inputRef.current!.value);
   };
 
   return (
@@ -18,7 +18,7 @@ export const PokemonGuesserPresentational = (props: PresentationalProps) => {
       ) : (
         <React.Fragment>
           <div>
-            <PokemonGuessingImage state={props.state} pokemon={props.pokemon} />
+            <PokemonGuessingImage state={props.state} pokemon={props.pokemon!} />
           </div>
           <div>
             {props.state === ResultState.ERROR && (

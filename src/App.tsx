@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { PokemonGuesser } from './components/PokemonGuesser';
 import { PokemonProvider } from './context/PokemonContext';
 import './style.css';
