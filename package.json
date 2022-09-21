@@ -11,13 +11,14 @@
     "react-dom": "^18.1.0",
     "react-is": ">= 16.8.0",
     "react-loader-spinner": "^5.3.4",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "ts-jest": "^29.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:coverage": "react-scripts test -- --coverage",
+    "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "devDependencies": {

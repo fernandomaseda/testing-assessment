@@ -22,7 +22,7 @@ export function useGetRandomPokemon(): {
 
   const randomPokemon = useMemo(() => {
     const pokemonInfo = pokemons[randomIdx];
-    if (pokemons.length > 0 && pokemonInfo.id) {
+   if (pokemons.length > 0 && pokemonInfo.id) {
       return pokemonInfo as Pokemon;
     } else if (pokemonInfo?.name && !isLoading) {
       fillPokemonDetail(pokemonInfo.name);
